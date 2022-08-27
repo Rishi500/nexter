@@ -8,6 +8,9 @@
         grid-template-rows: repeat(6, 1fr);
         grid-template-columns: repeat(6, 1fr);
         align-items: center;
+        @media only screen and (max-width: $md-screen){
+            grid-column: 1/-1;
+      }
     }
 
     &__img{
@@ -16,6 +19,10 @@
             grid-column: 2/span 4 ;
             grid-row: 2/span 4;
             box-shadow: 0 2rem 6rem rgba(black, .1);
+            @media only screen and (max-width: $md-screen){
+                grid-column: 2/span 4 ;
+                grid-row: 2/span 4;
+          }
         }
         &--2{
             width: 115%;
@@ -23,6 +30,10 @@
             grid-row: 4/-2;
             z-index: 2;
             box-shadow: 0 2rem 6rem rgba(black, .2);
+            @media only screen and (max-width: $md-screen){
+                grid-column: 4/6 ;
+                grid-row: 4/-1;
+            }
         }
     }
 
@@ -35,6 +46,9 @@
         display: grid;
         align-content: center;
         justify-items: start;
+        @media only screen and (max-width: $md-screen){
+            grid-column: 1/-1;
+        }
 
     }
     &__text{
